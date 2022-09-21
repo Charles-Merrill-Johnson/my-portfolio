@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Welcome to my portfolio app.
+
+This is a an on going project to highlight some of the work I have done, what I am currently working on, what I am learning, and anything else I feel is relevent.
+So thank you for stopping by and lets see what we can do!  
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
