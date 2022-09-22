@@ -30,15 +30,17 @@
     top: 50%;
     margin-top: -120px;
     width: 100%;
+    padding-bottom: 20px;
 
     a {
-      font-size: 35px;
+      font-size: 30px;
       color: #4d4d4e;
       display: block;
       line-height: 51px;
       height: 51px;
       position: relative;
       text-decoration: none;
+      margin-bottom: 5px;
 
       i {
         transition: all 0.3s ease-out;
@@ -58,7 +60,7 @@
 
       &:after {
         content: '';
-        font-size: 15px;
+        font-size: 10px;
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
@@ -93,6 +95,30 @@
         &:after{
             content: 'FILES';
         }
+    }
+   }
+
+   ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 25px;
+        line-height: 16px;
+
+        &:hover svg {
+          color: #00a6ff;
+        }
+      }
     }
    }
 }
