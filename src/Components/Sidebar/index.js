@@ -3,7 +3,12 @@ import { Link, NavLink } from 'react-router-dom'
 import Logo from '../../assests/images/mylogo.png'
 import SubLogo from '../../assests/images/sublogo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import {
+  faCode,
+  faFile,
+  faHome,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => (
   <div className="nav-bar">
@@ -30,6 +35,14 @@ const Sidebar = () => (
         to="/mywork"
       >
         <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
+      </NavLink>
+      <NavLink
+        exact="true"
+        activeclassname="active"
+        className="files-link"
+        to="/files"
+      >
+        <FontAwesomeIcon icon={faFile} color="#4d4d4e" />
       </NavLink>
     </nav>
   </div>
