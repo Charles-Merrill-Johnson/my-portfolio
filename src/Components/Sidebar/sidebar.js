@@ -1,14 +1,8 @@
-import './index.scss'
+import './sidebar.scss'
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../../assests/images/mylogo.png'
 import SubLogo from '../../assests/images/sublogo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faCode,
-  faFile,
-  faHome,
-  faUser,
-} from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
@@ -19,7 +13,7 @@ const Sidebar = () => (
     </Link>
     <nav>
       <NavLink exact="true" activeclassname="active" to="/">
-        <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+        HOME
       </NavLink>
       <NavLink
         exact="true"
@@ -27,7 +21,7 @@ const Sidebar = () => (
         className="about-link"
         to="/about"
       >
-        <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        ABOUT
       </NavLink>
       <NavLink
         exact="true"
@@ -35,7 +29,7 @@ const Sidebar = () => (
         className="mywork-link"
         to="/mywork"
       >
-        <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
+        CODE
       </NavLink>
       <NavLink
         exact="true"
@@ -43,7 +37,7 @@ const Sidebar = () => (
         className="files-link"
         to="/files"
       >
-        <FontAwesomeIcon icon={faFile} color="#4d4d4e" />
+        FILES
       </NavLink>
     </nav>
     <ul>
@@ -53,7 +47,7 @@ const Sidebar = () => (
           rel="noreferrer"
           href="https://www.linkedin.com/in/charles-merrill-johnson/"
         >
-          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faLinkedin} color="#ffffff" />
         </a>
       </li>
       <li>
@@ -62,7 +56,7 @@ const Sidebar = () => (
           rel="noreferrer"
           href="https://github.com/Charles-Merrill-Johnson"
         >
-          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faGithub} color="#ffffff" />
         </a>
       </li>
     </ul>
