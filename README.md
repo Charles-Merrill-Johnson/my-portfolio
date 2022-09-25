@@ -3,6 +3,12 @@
 This is a an on going project to highlight some of the work I have done, what I am currently working on, what I am learning, and anything else I feel is relevent.
 So thank you for stopping by and lets see what we can do!  
 
+
+color palette
+background #e2dbd2
+nav-bar background #082032
+on-hover #F0A500
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

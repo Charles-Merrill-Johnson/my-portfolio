@@ -44,19 +44,21 @@ const Sidebar = () => (
       <li>
         <a
           target="_blank"
+          className="anchor-icon"
           rel="noreferrer"
           href="https://www.linkedin.com/in/charles-merrill-johnson/"
         >
-          <FontAwesomeIcon icon={faLinkedin} color="#ffffff" />
+          <FontAwesomeIcon icon={faLinkedin} color="e2dbd2" />
         </a>
       </li>
       <li>
         <a
           target="_blank"
+          className="anchor-icon"
           rel="noreferrer"
           href="https://github.com/Charles-Merrill-Johnson"
         >
-          <FontAwesomeIcon icon={faGithub} color="#ffffff" />
+          <FontAwesomeIcon icon={faGithub} color="e2dbd2" />
         </a>
       </li>
     </ul>
