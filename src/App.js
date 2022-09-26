@@ -8,6 +8,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />} />
+        {/* <Route path="/sidebar" element={<Sidebar1 />} /> */}
       </Routes>
     </>
   )
