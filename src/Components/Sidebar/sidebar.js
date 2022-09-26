@@ -1,7 +1,7 @@
 import './sidebar.scss'
-import { Link, NavLink } from 'react-router-dom'
-import Logo from '../../assests/images/mylogo.png'
-import SubLogo from '../../assests/images/sublogo.png'
+// import { NavLink } from 'react-router-dom'
+// import Logo from '../../assests/images/mylogo.png'
+// import SubLogo from '../../assests/images/sublogo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import React, { useState } from 'react'
@@ -17,8 +17,8 @@ const Sidebar = () => {
   return (
     <>
       <div className="navbar-container">
-        <nav className="navbar">
-          <div className="navbar-container">
+        <nav className="navbar shadow-nb">
+          <div className="navbar-container2 navbar">
             <a href="/" className="site-logo">
               Company Logo
             </a>
@@ -41,7 +41,7 @@ const Sidebar = () => {
               <li className="sb-link">HOME</li>
               <li className="sb-link">ABOUT</li>
               <li className="sb-link">CODE</li>
-              <li className="sb-link">FILES</li>
+              <li className="sb-link">PROJECTS</li>
             </ul>
           </div>
         </div>
@@ -49,6 +49,30 @@ const Sidebar = () => {
           className={`sidebar-overlay ${openNav === true ? 'active' : ''}`}
           onClick={ToggleSideBar}
         ></div>
+        <footer>
+          <div className="sidebar-socials">
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/charles-merrill-johnson/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Charles-Merrill-Johnson"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
       </div>
     </>
   )
